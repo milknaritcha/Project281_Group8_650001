@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_suppliers" value="name:sup_id;datatype:int,name:sup_name;datatype:string,name:address;datatype:blob,name:phone;datatype:string,name:contact_name;datatype:string,name:website;datatype:string" />
+</info>
