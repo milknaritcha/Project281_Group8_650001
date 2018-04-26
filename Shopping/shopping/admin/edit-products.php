@@ -11,7 +11,6 @@ else{
 if(isset($_POST['submit']))
 {
 	$category=$_POST['category'];
-	$subcat=$_POST['subcategory'];
 	$productname=$_POST['productName'];
 	$productcompany=$_POST['productCompany'];
 	$productprice=$_POST['productprice'];

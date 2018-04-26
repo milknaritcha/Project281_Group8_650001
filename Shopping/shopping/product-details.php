@@ -169,10 +169,10 @@ while ($rws=mysqli_fetch_array($ret)) {
 
 							<div class="product-price">	
 								<span class="price">
-									Rs. <?php echo htmlentities($rws['productPrice']);?>.00
+									<?php echo htmlentities($rws['productPrice']);?>.00 Bath
 								</span>
 									
-							    <span class="price-before-discount">Rs.<?php echo htmlentities($row['productPriceBeforeDiscount']);?></span>					
+							    <span class="price-before-discount"><?php echo htmlentities($row['productPriceBeforeDiscount']);?> Bath</span>					
 							
 							</div><!-- /.product-price -->
 							
@@ -367,8 +367,8 @@ $num=mysqli_num_rows($rt);
 
 									<div class="col-sm-6">
 										<div class="price-box">
-											<span class="price">Rs. <?php echo htmlentities($row['productPrice']);?></span>
-											<span class="price-strike">Rs.<?php echo htmlentities($row['productPriceBeforeDiscount']);?></span>
+											<span class="price"> <?php echo htmlentities($row['productPrice']);?> Bath </span>
+											<span class="price-strike"> <?php echo htmlentities($row['productPriceBeforeDiscount']);?> Bath</span>
 										</div>
 									</div>
 
@@ -576,7 +576,7 @@ while($rvw=mysqli_fetch_array($qry))
 				</div><!-- /.product-tabs -->
 
 <?php $cid=$row['category'];
-			$subcid=$row['subCategory']; } ?>
+			 } ?>
 				<!-- ============================================== UPSELL PRODUCTS ============================================== -->
 <section class="section featured-product wow fadeInUp">
 	<h3 class="section-title">Realted Products </h3>
@@ -609,9 +609,9 @@ while($rw=mysqli_fetch_array($qry))
 
 			<div class="product-price">	
 				<span class="price">
-					Rs.<?php echo htmlentities($rw['productPrice']);?>			</span>
-										     <span class="price-before-discount">Rs.
-										     <?php echo htmlentities($rw['productPriceBeforeDiscount']);?></span>
+					<?php echo htmlentities($rw['productPrice']);?>	Bath		</span>
+										     <span class="price-before-discount"> 
+										     <?php echo htmlentities($rw['productPriceBeforeDiscount']);?> Bath</span>
 									
 			</div><!-- /.product-price -->
 			
@@ -647,7 +647,6 @@ while($rw=mysqli_fetch_array($qry))
 			</div><!-- /.col -->
 			<div class="clearfix"></div>
 		</div>
-<?php include('includes/brands-slider.php');?>
 </div>
 </div>
 <?php include('includes/footer.php');?>
@@ -668,7 +667,7 @@ while($rw=mysqli_fetch_array($qry))
     <script src="assets/js/wow.min.js"></script>
 	<script src="assets/js/scripts.js"></script>
 
-	<!-- For demo purposes â€“ can be removed on production -->
+	<!-- For demo purposes – can be removed on production -->
 	
 	<script src="switchstylesheet/switchstylesheet.js"></script>
 	
@@ -685,7 +684,7 @@ while($rw=mysqli_fetch_array($qry))
 		   $('.show-theme-options').delay(2000).trigger('click');
 		});
 	</script>
-	<!-- For demo purposes â€“ can be removed on production : End -->
+	<!-- For demo purposes – can be removed on production : End -->
 
 	
 

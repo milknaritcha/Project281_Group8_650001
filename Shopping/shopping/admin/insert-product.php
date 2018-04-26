@@ -30,7 +30,7 @@ $query=mysqli_query($con,"select max(id) as pid from products");
 	move_uploaded_file($_FILES["productimage1"]["tmp_name"],"productimages/$productid/".$_FILES["productimage1"]["name"]);
 	move_uploaded_file($_FILES["productimage2"]["tmp_name"],"productimages/$productid/".$_FILES["productimage2"]["name"]);
 	move_uploaded_file($_FILES["productimage3"]["tmp_name"],"productimages/$productid/".$_FILES["productimage3"]["name"]);
-$sql=mysqli_query($con,"insert into products(category,subCategory,productName,productCompany,productPrice,productDescription,shippingCharge,productAvailability,productImage1,productImage2,productImage3,productPriceBeforeDiscount) values('$category','$subcat','$productname','$productcompany','$productprice','$productdescription','$productscharge','$productavailability','$productimage1','$productimage2','$productimage3','$productpricebd')");
+$sql=mysqli_query($con,"insert into products(category,productName,productCompany,productPrice,productDescription,shippingCharge,productAvailability,productImage1,productImage2,productImage3,productPriceBeforeDiscount) values('$category','$productname','$productcompany','$productprice','$productdescription','$productscharge','$productavailability','$productimage1','$productimage2','$productimage3','$productpricebd')");
 $_SESSION['msg']="Product Inserted Successfully !!";
 
 }
@@ -52,16 +52,7 @@ $_SESSION['msg']="Product Inserted Successfully !!";
 <script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script>
 
    <script>
-function getSubcat(val) {
-	$.ajax({
-	type: "POST",
-	url: "get_subcat.php",
-	data:'cat_id='+val,
-	success: function(data){
-		$("#subcategory").html(data);
-	}
-	});
-}
+
 function selectCountry(val) {
 $("#search-box").val(val);
 $("#suggesstion-box").hide();
@@ -110,7 +101,7 @@ $("#suggesstion-box").hide();
 <div class="control-group">
 <label class="control-label" for="basicinput">Category</label>
 <div class="controls">
-<select name="category" class="span8 tip" onChange="getSubcat(this.value);"  required>
+<select name="category" class="span8 tip"  required>
 <option value="">Select Category</option> 
 <?php $query=mysqli_query($con,"select * from category");
 while($row=mysqli_fetch_array($query))
