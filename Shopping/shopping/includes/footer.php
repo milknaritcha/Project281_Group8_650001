@@ -16,17 +16,9 @@
     </div><!-- /.footer-logo -->
 
      <div class="module-body m-t-20">
-        <p class="about-us"> Nam libero tempore, cum soluta nobis est ses  eligendi optio cumque cum soluta nobis est ses  eligendi optio cumque.</p>
+        <p class="about-us"> Project CS281, Group 8, Section 650001 </p>
     
-        <div class="social-icons">
-            
-        <a href="http://facebook.com/transvelo" class='active'><i class="icon fa fa-facebook"></i></a>
-        <a href="#"><i class="icon fa fa-twitter"></i></a>
-        <a href="#"><i class="icon fa fa-linkedin"></i></a>
-        <a href="#"><i class="icon fa fa-rss"></i></a>
-        <a href="#"><i class="icon fa fa-pinterest"></i></a>
-
-        </div><!-- /.social-icons -->
+        
     </div><!-- /.module-body -->
 
 </div><!-- /.contact-info -->
@@ -34,7 +26,7 @@
 
             	<div class="col-xs-12 col-sm-6 col-md-4">
             		 <!-- ============================================================= CONTACT TIMING============================================================= -->
-<div class="contact-timing" hidden="hidden">
+<div class="contact-timing">
 	<div class="module-heading">
 		<h4 class="module-title">opening time</h4>
 	</div><!-- /.module-heading -->
@@ -43,9 +35,9 @@
 		<div class="table-responsive">
 			<table class="table">
 				<tbody>
-					<tr><td>Monday-Friday:</td><td class="pull-right">08.00 To 18.00</td></tr>
-					<tr><td>Saturday:</td><td class="pull-right">09.00 To 20.00</td></tr>
-					<tr><td>Sunday:</td><td class="pull-right">10.00 To 20.00</td></tr>
+					<tr><td>Monday-Friday:</td><td class="pull-right">08.00 To 20.00</td></tr>
+					<tr><td>Saturday:</td><td class="pull-right">09.00 To 22.00</td></tr>
+					<tr><td>Sunday:</td><td class="pull-right">10.00 To 22.00</td></tr>
 				</tbody>
 			</table>
 		</div><!-- /.table-responsive -->
@@ -70,7 +62,7 @@
                     </span>
                 </div>
                 <div class="media-body">
-                    <p>Bangkok,Thailand</p>
+                    <p>Thammasat rangsit, Thailand</p>
                 </div>
             </li>
 
@@ -82,7 +74,7 @@
                     </span>
                 </div>
                 <div class="media-body">
-                    <p>(66+) 863903374<br>(66+) 864502124</p>
+                    <p>(+66) 863903374<br>(+66) 864502124</p>
                 </div>
             </li>
 

@@ -446,7 +446,7 @@ $num=mysqli_num_rows($rt);
 						<div class="col-sm-3">
 							<ul id="product-tabs" class="nav nav-tabs nav-tab-cell">
 								<li class="active"><a data-toggle="tab" href="#description">DESCRIPTION</a></li>
-								<li><a data-toggle="tab" href="#review">REVIEW</a></li>
+								
 							</ul><!-- /.nav-tabs #product-tabs -->
 						</div>
 						<div class="col-sm-9">
@@ -579,7 +579,7 @@ while($rvw=mysqli_fetch_array($qry))
 			 } ?>
 				<!-- ============================================== UPSELL PRODUCTS ============================================== -->
 <section class="section featured-product wow fadeInUp">
-	<h3 class="section-title">Realted Products </h3>
+	
 	<div class="owl-carousel home-owl-carousel upsell-product custom-carousel owl-theme outer-top-xs">
 	   
 		<?php 
